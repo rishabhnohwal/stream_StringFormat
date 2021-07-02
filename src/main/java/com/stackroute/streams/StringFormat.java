@@ -17,8 +17,8 @@ public class StringFormat {
 
        List<String> list = input.stream().map(num->num%2!=0?",odd"+num:",even"+num).collect(Collectors.toList());
         String ans="";
-        for (String ele:list){
-            ans+=ele;
+        for (String value:list){
+            ans+=value;
         }
         return ans.substring(1);
 
